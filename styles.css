@@ -1,0 +1,157 @@
+body{
+	margin:0;
+	padding:0;
+}
+
+.container{
+	padding:20px;
+}
+
+/*navbar*/
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar li {
+  float: left;
+}
+
+.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar li a:hover {
+  background-color: #111;
+}
+
+/*stack*/
+#stackcont{
+	margin-top:10px;
+	width: 120px;
+	min-height: 150px;
+
+	border-bottom: 1px solid black;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+
+	display: flex;
+	flex-direction: column;
+	justify-content:flex-end;
+}
+
+.stackitem{
+	text-align: center;
+	background-color: lightgray;
+	border: 1px solid black;
+	margin: 1px 1px 1px 1px;
+	border-radius: 8px;
+}
+/**/
+#arrcont{
+	display: flex;
+	align-items: flex-end;
+	padding:5px 2px 5px 2px;
+	gap: 8px;
+	border: 1px solid black;
+	height: fit-content;
+	width: fit-content;
+}
+.element{
+	bottom: 0;
+	text-align: center;
+	border: 1px solid black;
+/*	margin: 0px 5px 0px 5px;*/
+	padding: 4px;
+	min-width: 15px;
+	width: auto;
+	min-height=10px;
+}
+
+.blue{
+	font-weight: bolder;
+	color:blue;
+	border-color: blue;
+	border-width: 2px;
+	background: radial-gradient(circle, rgba(92,251,63,1) 0%, rgba(239,252,70,1) 100%);
+}
+
+/*queue*/
+#qcont{
+	display:flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 5px;
+
+	min-width:300px;
+	width:fit-content;
+	height:50px;
+
+	border-bottom:1px solid black;
+	border-top:1px solid black;
+
+	margin-bottom: 10px;
+	padding: 2px 5px 2px 5px;
+}
+#btnc{
+	display: flex;
+	width: 300px;
+	justify-content: space-between;
+}
+.qitem{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	border: 1px solid black;
+	border-radius: 5px;
+	background-color: lightgray;
+	padding: 5px;
+	height: 30px;
+	width: 30px;
+	margin: 0px;
+}
+
+/*Tree*/
+/*#treecont{
+
+	margin-top: 10px;
+	width: 500px;
+	border: 1px solid black;
+}
+.treenode{
+	border: 1px solid black;
+	border-radius: 25px;
+
+	width: 35px;
+	height: 35px;
+	padding: 5px;
+	background-color: lightgray;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+.left{
+	margin-right: 200px;
+	display: inline-block;
+}
+.right{
+	margin-left: 200px;
+	display: inline-block;
+}
+.root{
+	align-self: center;
+}
+.root::before{
+    content: "\a";
+    white-space: pre;
+}*/
