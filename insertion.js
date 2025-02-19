@@ -17,7 +17,7 @@ async function insertionSort(){
 			sortarray[j+1] = sortarray[j];
 
 			swapElements(elements[j+1], elements[j]);
-			await sleep(400);
+			await sleep(100);
 
 
 			// elements[j + 1].textContent = elements[j].textContent;
@@ -33,7 +33,7 @@ async function insertionSort(){
 		// elements[j + 1].textContent = tmp;
 
 		elements[j+1].style.backgroundColor="lime";
-		await sleep(200);
+		// await sleep(200);
 
 		for (let k = 0; k <= i; k++) {
         	elements[k].classList.remove("blue");

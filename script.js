@@ -1,7 +1,8 @@
-
 var size = document.getElementById('arrSize');
 var dispSize = document.getElementById('arrsiz');
 let arrcont = document.getElementById("arrcont");
+
+var arraysize;
 if (arrcont.innerHTML === "") {
 	arrcont.innerHTML="<p>No Array, Generate one</p>";
 }
@@ -15,6 +16,7 @@ size.addEventListener("input", function() {
 function generateArray(){
 	console.log("Array size "+dispSize.textContent);
 	sortarray = new Array(dispSize.textContent);
+	arraysize = dispSize.textContent;
 
 	for (var i = 0; i < dispSize.textContent; i++) {
 		sortarray[i] = Math.floor(Math.random()*211);
